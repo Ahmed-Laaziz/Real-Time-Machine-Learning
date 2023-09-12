@@ -1,9 +1,9 @@
-# Real-Time-Machine-Learning
+<center><h1>⏱️ Real Time Machine Learning 🤖</h1></center>
 
 <img align="center" alt="architecture" src="https://insidebigdata.com/wp-content/uploads/2023/06/Machine_Learning_shutterstock_1110900704_special.jpg" />
 <center><p>Welcome to my real-time stock market prediction with Machine Learning project. I have used TensorFlow.js for constructing ml model architecture, and Kafka for real-time data streaming and pipelining.</p></center>
 
-##Architecture
+## Architecture
 <img align="center" alt="architecture" src="./images/Architecture2.png" />
 ## Technologies used:
  1. Kafka.<img align="left" alt="kafka" width="26px" src="./images/kafka2.jpg" /><br>
@@ -87,9 +87,3 @@ example - Prediction Open 0.12453
 ```
 This line in the above image(ml_consumer.js output) indicates the prediction of the model in real-time. The model utilizes 7 prior time-series logs as input and predicts the 8th time-series event. 
 
-
-## Future Scopes.
-
-1. I have created the server-side architecture of the model, for which the client-side also needed to be developed.
-2. I was researching on react.js for construction of the client-side, but I failed at some aspects due to which I left the client-side for future development.
-3. The code I have written could be further optimised for better architectural design and model performance.
