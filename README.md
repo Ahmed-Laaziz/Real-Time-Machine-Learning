@@ -4,7 +4,7 @@
 <center><p>Welcome to my real-time stock market prediction with Machine Learning project. I have used TensorFlow.js for constructing ml model architecture, and Kafka for real-time data streaming and pipelining.</p></center>
 
 ## Architecture
-<img align="center" alt="architecture" src="./images/Architecture2.png" />
+<img align="center" alt="architecture" src="./Architecture2.png" />
 ## Technologies used:
  1. Kafka.<img align="left" alt="kafka" width="26px" src="./images/kafka2.jpg" /><br>
     - Pipelining logs from source to topics.
