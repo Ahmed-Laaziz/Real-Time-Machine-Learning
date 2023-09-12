@@ -9,15 +9,15 @@
  1. Kafka.<img align="left" alt="kafka" width="26px" src="./images/kafka2.jpg" /><br>
     - Pipelining logs from source to topics.
     - Topics are subscribed by consumer for real-time ml prediction and model training in parallel.
- 2. TensorFlow.js.<img align="left" alt="tf" width="26px" src="./images/tfjslogo.png" /><br>
+ 2. TensorFlow.js.<img align="left" alt="tf" width="26px" src="./tfjslogo.png" /><br>
     - Construction of tensorflow model in node.js.
     - Training model with time-series stock market data.
     - Use tfjs model for real-time prediction.
- 3. MongoDB.<img align="left" alt="mongodb" width="26px" src="./images/mongodb.png" /><br>
+ 3. MongoDB.<img align="left" alt="mongodb" width="26px" src="./mongodb.png" /><br>
     - Update data-base with incoming stock market logs.
     - Use stored logs for analysis, and model training.
     - Store performance of the ml model for monitoring purpose.
- 4. Node.js <img align="left" alt="node" width="26px" src="./images/node.png" /><br>
+ 4. Node.js <img align="left" alt="node" width="26px" src="./node.png" /><br>
     - The entire server architecture is developed with node.js
 
 ## Implementation
@@ -43,13 +43,13 @@ $ node producer.js
 $ start.sh
 ```
 Streaming producer logs.<br>
-<img align="center" alt="producer" src="./images/producer.png" />
+<img align="center" alt="producer" src="./producer.png" />
 <br>
 ```sh
 $ node consumer.js
 ```
 Streaming consumer logs.<br>
-<img align="center" alt="consumer" src="./images/consumer.png" />
+<img align="center" alt="consumer" src="./consumer.png" />
 <br>
 In the __consumer__(consumer.js) the incoming logs are updated to MongoDB for further model training and analysis.
 
@@ -62,24 +62,24 @@ $ node tf_train.js
 # or
 $ server.sh
 ```
-<img align="center" alt="train" src="./images/train.png" />
+<img align="center" alt="train" src="./train.png" />
 Validating the model.
 
 ```sh
 $ node tf_validate.js
 ```
 
-<img align="center" alt="train" src="./images/validate.png" /><br>
+<img align="center" alt="train" src="./validate.png" /><br>
 After validation the real and predicted values along with date and attribute of the stock-market time-series data that the model is trained against are updated to the MongoDB.<br>
 ### Model performance chart from MongoDB
-<img align="center" alt="performance" src="./images/MLCharts.png" />
+<img align="center" alt="performance" src="./MLCharts.png" />
 
 ### Real-time prediction.
 The weights of the trained model are saved and loaded at the consumer side that subscribes to the second topic of the Kafka stream and predicts the output of the time-series event in real-time. As both topics of the Kafka pipeline are working in parallel, parallelism is achieved and logs are streamed by Kafka is real-time, which indeed implies the machine learning model could train and predict target in real-time.
 ```sh
 $ node ml_consumer.js
 ```
-<img align="center" alt="ml_consumer" src="./images/ml_consumer.png" />
+<img align="center" alt="ml_consumer" src="./ml_consumer.png" />
 
 ```
 Prediction [attribute] [predicted value].
