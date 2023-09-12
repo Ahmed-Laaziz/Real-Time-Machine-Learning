@@ -88,3 +88,6 @@ example - Prediction Open 0.12453
 ```
 This line in the above image(ml_consumer.js output) indicates the prediction of the model in real-time. The model utilizes 7 prior time-series logs as input and predicts the 8th time-series event. 
 
+---
+
+<div align="center">⭐ Don't forget to star this repository if you find it helpful! ⭐</div>
