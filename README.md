@@ -5,8 +5,9 @@
 
 ## Architecture
 <img align="center" alt="architecture" src="./Architecture2.png" />
+
 ## Technologies used:
- 1. Kafka.<img align="left" alt="kafka" width="26px" src="./images/kafka2.jpg" /><br>
+ 1. Kafka.<img align="left" alt="kafka" width="26px" src="./kafka2.jpg" /><br>
     - Pipelining logs from source to topics.
     - Topics are subscribed by consumer for real-time ml prediction and model training in parallel.
  2. TensorFlow.js.<img align="left" alt="tf" width="26px" src="./tfjslogo.png" /><br>
