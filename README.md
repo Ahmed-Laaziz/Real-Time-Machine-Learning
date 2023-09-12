@@ -1,4 +1,4 @@
-<center><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⏱️ Real Time Machine Learning 🤖</h1></center>
+<center><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⏱️ Real Time Machine Learning 🤖</h1></center>
 
 <img align="center" alt="architecture" src="https://insidebigdata.com/wp-content/uploads/2023/06/Machine_Learning_shutterstock_1110900704_special.jpg" />
 <center><p>Welcome to my real-time stock market prediction with Machine Learning project. I have used TensorFlow.js for constructing ml model architecture, and Kafka for real-time data streaming and pipelining.</p></center>
